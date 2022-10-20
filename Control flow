@@ -1,0 +1,56 @@
+public class ControlFlowApp {
+
+    public static void main(String[] args) {
+
+        boolean isDamaged = false;
+        String carColor = "purple";
+        char energyEfficiencyCategory = 'Z';
+
+        if (isDamaged) {
+            System.out.println("Car is damaged");
+        } else {
+            System.out.println("Accident free car");
+        }
+
+        if (isDamaged) {
+            System.out.println("Car is damaged");
+        } else {
+            System.out.println("Accident free car");
+        }
+
+        if (carColor.equals("red")) {
+            System.out.println("Nie lubię czerwonego");
+        } else if (carColor.equals("green")){
+            System.out.println("Zieloeny? Może być.");
+        } else if (carColor.equals("blue")) {
+            System.out.println("Niebieski. A co?");
+        } else {
+            System.out.println("I have no idea...");
+        }
+
+        switch (energyEfficiencyCategory) {
+            case 'A':
+            case 'B':
+                System.out.println("low energy consumption");
+                break;
+            case 'G':
+                System.out.println("very high energy consumpiton");
+                break;
+            default:
+                System.out.println("not defined");
+        }
+
+
+        char stawiaszNa = 'C';
+
+        if (stawiaszNa == 'C') {
+            System.out.println("Wygrałeś");
+        } else {
+            System.out.println("Stracileś");
+        }
+
+
+
+    }
+
+}
