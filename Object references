@@ -1,0 +1,39 @@
+public class ObjectReferenceApp {
+
+    public static void main(String[] args) {
+        Byte numberOfSeats = 5;
+        Short horsePower = 392;
+        Integer power = 14999;
+        Long registrationNumber = 149999999999999L;
+
+        Float fuelConsumptionCombined = 15.5F;
+        Double fuelConsumptionPrecise = 15.5233333333333333333e-1;
+
+        Boolean isDamaged = true;
+        Character energyEfficiencyCategory = 'G';
+
+        String  carModel = "DodgeChallenger SRT 382";
+        String  carModelNew = new String("DodgeChallenger SRT 382");
+
+        System.out.println("NumberOfSeats: " + numberOfSeats);
+        System.out.println("Horse power: " + horsePower);
+        System.out.println("Power: " + power.floatValue());
+        System.out.println("Registration ID: " + registrationNumber);
+        System.out.println("Fuel consmtion combined: " + fuelConsumptionCombined.intValue());
+        System.out.println("Fuel consmtion precise: " + fuelConsumptionPrecise);
+        System.out.println("Car is damaged: " + isDamaged);
+        System.out.println("Energy: " + energyEfficiencyCategory);
+        System.out.println("Car model: " + carModel);
+        System.out.println("Car model: " + carModel.toUpperCase());
+        System.out.println("Car model: " + carModel.toLowerCase());
+        System.out.println("Car model and car model with new keyword are equels: " + carModel.equals(carModelNew));
+        System.out.println("Car model new: " + carModelNew);
+
+
+
+    }
+
+
+
+
+}
