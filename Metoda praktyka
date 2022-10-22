@@ -1,0 +1,49 @@
+public class MethodPracticeApp {
+
+    public static void main(String[] args) {
+
+        System.out.println(energyEffeciencyConsumption("B"));
+
+        getCarDescription("Ferrari",2019,"Fuck");
+
+    }
+
+    static String energyEffeciencyConsumption(String energyEffeciencyCategory) {
+
+        switch (energyEffeciencyCategory) {
+            case "A":
+            case "a":
+                return "Very low";
+            case "B":
+            case "b":
+                return "low";
+            case "C":
+            case "c":
+                return"normal";
+            case "D":
+            case "d":
+                return"above normal";
+            case "E":
+            case "e":
+                return"high";
+            case "F":
+            case "f":
+                return"very high";
+            case "G":
+            case "g":
+                return"extremly high";
+            default:
+                return "wpisz od A do G";
+
+        }
+    }
+
+    static void getCarDescription (String model, int productionYear, String condition) {
+
+        System.out.println("Model: " + model);
+        System.out.println("Production year: " + productionYear);
+        System.out.println("Condition: " + condition);
+
+    }
+
+}
